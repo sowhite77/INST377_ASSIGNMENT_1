@@ -1,0 +1,36 @@
+<html>
+<head>
+  <title>Class Website - Contact Us</title>
+  <link rel="stylesheet" href="ASMT1_SW.css">
+  <script src="ASMT1_SophiaW.js"></script>
+</head>
+<body>
+  <div class="header">
+    <h1>Contact Us</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="ASMT1_home_SW.html">Home</a></li>
+      <li><a href="ASMT1_games_SW.html">Games</a></li>
+      <li><a href="ASMT1_contact_SW.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <form class="contact-form" onsubmit="return validateContactForm();">
+    <label for="contact-name">Name:</label>
+    <input type="text" id="contact-name" name="name" required>
+
+    <label for="contact-date">Date:</label>
+    <input type="date" id="contact-date" name="date" required>
+
+    <label for="contact-message">Message:</label>
+    <textarea id="contact-message" name="message" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+  
+  <div class="footer">
+    Copyright of Sophia Inc.  
+  </div>
+</body>
+</html>

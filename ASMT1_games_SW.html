@@ -1,0 +1,62 @@
+<html>
+<head>
+  <title>Class Website - Games</title>
+  <link rel="stylesheet" href="ASMT1_SW.css">
+  <script src="ASMT1_SophiaW.js"></script>
+</head>
+<body>
+  <div class="header">
+    <h1>Play Rock, Paper, Scissors!</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="ASMT1_home_SW.html">Home</a></li>
+      <li><a href="ASMT1_games_SW.html">Games</a></li>
+      <li><a href="ASMT1_contact_SW.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="main-container">
+    <div class="main-section">
+      <h2>Rock-Paper-Scissors</h2>
+      <form id="rps-form" onsubmit="return playGameV2();">
+        <label for="name">Your Name: </label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="choice">Choose:</label> 
+        <select id="choice" name="choice">
+          <option value="Rock">Rock</option>
+          <option value="Paper">Paper</option>
+          <option value="Scissors">Scissors</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Play">
+      </form>
+      <br>
+      <div style="display: flex; justify-content: space-between; max-width: 400px;">
+        <div class="choice-box">
+          <strong>You Chose:</strong>
+          <div id="user-choice">-</div>
+        </div>
+        <div class="choice-box">
+          <strong>Computer Chose:</strong>
+          <div id="computer-choice">-</div>
+        </div>
+      </div>
+    </div>
+    <aside class="sidebar">
+      <h2>Rules</h2>
+      <ul>
+        <li>Rock beats Scissors</li>
+        <li>Scissors beats Paper</li>
+        <li>Paper beats Rock</li>
+        <li>Spock beats Everything (computer only!)</li>
+      </ul>
+    </aside>
+  </div>
+
+  <div class="footer">
+    Copyright of Sophia Inc.
+  </div>
+</body>
+</html>
